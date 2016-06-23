@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 4.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+<title>ECC</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no" />
+
+<style type="text/css">
+
+
+
+
+div[style*="margin: 16px 0"] { margin:0 !important; }
+
+body {
+	margin:0 !important;
+	min-width: 100% !important;
+}
+html{height: 100%;cwidth: 100%;}
+
+
+table.body { min-width: 100%;}
+div, p, a, li, td {-webkit-text-size-adjust: none;-ms-text-size-adjust: none;}
+p {margin:0; padding:0; margin-bottom:0;}
+.ReadMsgBody { width:100%; }
+.ExternalClass { width:100%; } 
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
+#outlook a { padding:0; }
+table td {border-collapse: collapse;}	
+table {mso-table-lspace:0pt;mso-table-rspace:0pt; border-collapse:collapse;}
+.breakline {-ms-word-break: break-word; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+
+
+
+a[x-apple-data-detectors] {color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important;}
+}
+
+
+input { display:none; }
+@media (max-width:480px) {
+    
+    .main-table, .main-content img { width:100% !important;}
+    #navcontainer{
+      position:relative;
+    }
+    #navcontainer th{
+      display:block;
+      width: 100%;
+      border-bottom:2px solid #ffffff;
+      height:18px;
+      padding: 10px 0px;      
+    }
+    #menucontainer{
+      position:relative;
+      overflow:hidden;
+    }
+    #navcontainer table{
+      margin-top:-500px;
+      -ms-transition: margin-top .5s ease-in-out;
+      -webkit-transition: margin-top .5s ease-in-out;      
+    }
+    /* checkbox mechanism */
+    #navcheckbox:checked + table{
+      margin-top:0%;
+    }      
+    /* fallback hover mechanism */
+    .nav-over,.nav-under{
+     display:block !important;
+     max-height:none !important;
+     padding-top:3px;
+     padding-bottom:3px;
+    } 
+    .nav-over img,.nav-under img{
+     display:block;
+     float:right;
+     margin-right:5px;
+    } 
+    /*
+    to deal with quirks in windows 8.1 and Outlook iOS
+    */
+    .nav-over{
+     -ms-transition-delay: 1.5s;
+     -webkit-transition-delay: 1.5s;            
+    }
+    #navcontainer > .nav-over:hover + div table{
+      margin-top:0% !important;
+    }
+    #navcontainer > .nav-over:hover{
+      visibility:hidden;
+    }
+
+
+
+/*IPAD specific*/
+@media screen and (device-width: 768px) and (device-height: 1024px) {
+	html{ min-width:100%!important; max-width: none!important; }
+	.w100{width: 100% !important;height: auto !important; max-width: none!important;}
+	.nopad-ipad{padding: 0!important;}
+	
+	}
+
+@media screen and (max-device-width: 480px), screen and (max-width: 480px) {
+
+	.container {
+          width:100% !important;
+          min-width: 100% !important;
+          height:auto !important;}
+
+	.w100{width: 100% !important;height: auto !important; margin: 0 auto!important;}
+	.w90{width: 90% !important;height: auto !important; margin: 0 auto!important; padding: 5%!important;}
+
+	.force-show{display: block!important;width: 100%!important; max-width: 100%!important; height:auto!important; max-height:none!important;}
+	.force-pad{width: 90%!important; padding: 20px 5%!important;}
+	.mob-pad{width: 90%!important; padding: 20px 5%!important;}
+	.nopad{padding: 0!important;}
+	.no-max-width{max-width: none!important}	
+	
+	.text-pad{padding: 20px!important;}
+	.fontsize14{font-size: 14px!important; line-height:23px!important; text-align:center!important;}
+	.fontsize16{font-size: 16px!important; line-height:26px!important; padding-bottom: 16px!important;  text-align:center!important;}
+
+
+	.mobhide {display:none !important; width:0px !important}
+	.mob-show{font-size: 21px!important; line-height:26px!important; display: block!important; height: auto!important; padding-bottom: 32px!important; text-align: center;}
+
+	.mobheight10{height: 10px!important; line-height:10px!important; font-size:10px!important; width: 100%!important; display: block!important;}
+	.mobheight20{height: 20px!important; line-height:20px!important; font-size:20px!important; width: 100%!important; display: block!important;}
+	.mobheight30{height: 30px!important; line-height:30px!important; font-size:30px!important; width: 100%!important; display: block!important;}
+
+
+	.divideline{ height:auto!important; max-height: none!important; background-color: #cfcfcf!important; display: block!important;}
+	.column {width: 100%!important; clear:both !important; }
+	.mobstack{display:block !important; width: 100%!important; float: left!important; padding-bottom: 10px!important;}
+	.mobstack2{display:block !important; width: 100%!important; float: left!important; padding-bottom: 40px!important;}
+	.no-border{border: 0!important}	
+	.no-border{border: none!important;}
+	.iphone-hide{display: none!important;}
+	
+	
+	.no-bg{background-color: transparent;!important;}
+	.same-row{width: 40%!important;}
+	.center-content{margin: 0  auto; text-align:center;}
+	.show-text{line-height:1.4em!important; font-size:14px!important; text-decoration: none!important;}
+	.mob-only-height{max-height: none!important; height: auto!important;}
+	.mob-hero{width: 100%!important; height: auto!important; max-width:none!important; display: block!important;}
+	.logo{padding: 15px 0!important; width: 65%!important; margin:0 auto!important;}
+	.mob-nav-text a{font-size: 15px!important; color: #dfaa2c!important;}
+	.truck{width: 100%!important; max-height: none!important; height: auto!important;}
+
+}			
+}
+
+	
+</style>
+<!--[if mso]>
+<style type="text/css" media="all">
+tr { font-size:0; mso-line-height-alt:0; mso-margin-top-alt:0 }
+p, div, span{margin-top:0; margin-bottom:0}
+h1,h2,h3,h4,h5,h6,p,a,span,td,strong{font-family: Arial, Helvetica, sans-serif !important;}
+no-outlook{display:none!important;}
+outlookblock{display:block!important}
+</style>
+<![endif]-->
+</head>
+
+
+<body style="-webkit-font-smoothing: antialiased;width:100% !important;-webkit-text-size-adjust:none!important; margin:0; background-color:#000000!important"  bgcolor="#000000">
+
+<center>
+<table cellspacing="0" cellpadding="0" border="0"  class="container" style="min-width:600px;" width="100%" bgcolor="#000000" >
+	<tr>
+		<td width="639" class="w90" align="center">
+			<table cellspacing="0" cellpadding="0" border="0" width:="100%">
+				<tr>
+					<!-- LOGO -->
+					<td align="center" class="mobhide">
+						<img src="desktop-logo.jpg" alt="ECC" style="display:block; border:0; color:#ffffff; font-size:18px;"/>
+					</td>
+					<!-- MOB LOGO -->
+					<td class="force-show" style="max-height:0;width:0; display:none;">
+						<div class="force-show" style="max-height:0;width:0; display:none">
+						<img src="mob-logo.jpg" alt=" " style="border:0; display:none; max-height:0;" class="force-show logo" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<!-- NAV -->
+					<td class="mobhide">
+						<table cellspacing="0" cellpadding="0" border="0" width="639">
+							<tr>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<tr>
+											<td>
+												<img src="shop.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="weddings.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="corporate.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="about.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="contact.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<tr>
+											<td>
+												<img src="delivery.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="arrow.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="twitter.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="facebook.jpg" alt=" " style="display:block; border:0" />
+											</td>
+											<td>
+												<img src="mail.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<!-- MOB NAV -->
+					<!--[if mso]>
+      <div style="mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none; line-height: 0; visibility: hidden;">
+      <![endif]-->
+    <td class="force-show" style="max-height:0;width:0; display:none;">
+      <div class="force-show" style="max-height:0;width:0; display:none">
+      <div id="navcontainer">
+        <!--[if !mso 9]><!-->
+        <label for="navcheckbox">
+        <div class="nav-under" style="display:none;overflow:hidden;max-height:0px;background-color:#000000;"><img src="http://freshinbox.com/examples/hamburger-menu/images/hamburger.png" width="30" height="30" alt="Show Menu" border="0"></div>
+        <div class="nav-over" style="display:none;overflow:hidden;max-height:0px;position:absolute;top:0px;width:100%;opacity:0
+        "><img src="http://freshinbox.com/examples/hamburger-menu/images/hamburger.png" width="30" height="30" alt="Show Menu" border="0"></div>
+        </label>
+        <!--<![endif]-->
+        <div id="menucontainer">
+        <!--[if !mso 9]><!--><input id="navcheckbox" type="checkbox" style="display:none !important;"><!--<![endif]-->
+        <table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#000000" style="width:100% !important">
+
+            <tr>
+      <!--[if mso]>
+      <div style="mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none; line-height: 0; visibility: hidden;">
+      <![endif]-->
+            <th align="center" class="mob-nav-text"><a href="#" target="_blank" style="font-size:0px;font-family:arial,sans-serif;color:#ffffff;font-weight:bold;text-decoration:none;">Shop</a></th>
+            <!--[if mso]>
+      </div>
+      <![endif]-->
+
+      <!--[if mso]>
+      <div style="mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none; line-height: 0; visibility: hidden;">
+      <![endif]-->
+            <th align="center" class="mob-nav-text"><a href="#" target="_blank" style="font-size:0px;font-family:arial,sans-serif;color:#ffffff;font-weight:bold;text-decoration:none;">Weddings</a></th>
+             <!--[if mso]>
+      </div>
+      <![endif]-->
+
+  <!--[if mso]>
+      <div style="mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none; line-height: 0; visibility: hidden;">
+      <![endif]-->
+            <th align="center" class="mob-nav-text"><a href="#" target="_blank" style="font-size:0px;font-family:arial,sans-serif;color:#ffffff;font-weight:bold;text-decoration:none;">corporate</a></th> 
+          <!--[if mso]>
+      </div>
+      <![endif]--> 
+      
+      <!--[if mso]>
+      <div style="mso-hide: all; overflow: hidden; max-height: 0; width: 0; display: none; line-height: 0; visibility: hidden;">
+      <![endif]-->            
+            <th align="center" class="mob-nav-text"><a href="#" target="_blank" style="font-size:0px;font-family:arial,sans-serif;color:#ffffff;font-weight:bold;text-decoration:none;">About</a></th>
+            <!--[if mso]>
+      </div>
+      <![endif]-->
+            </tr>
+        </table>
+        </div>
+      </div>
+      </div>
+      </td>
+     
+      <!--[if mso]>
+      </div>
+      <![endif]-->
+				</tr>
+				<tr>
+					<td class="force-show" style="max-height:0;width:0; display:none;">
+						<div class="force-show" style="max-height:0;width:0; display:none">
+						<img src="delivery.jpg" alt=" " style="border:0; display:none; max-height:0;" class="force-show truck" />
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<!-- ONE COL -->
+					<td style="padding-top:20px">
+						<table cellspacing="0" cellpadding="0" border="0" width="639" class="w100">
+							<tr>
+								<td class="mobhide">
+									<img src="topmainframe.jpg" alt="" style="display:block; border:0"/>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<tr>
+											<td class="mobhide">
+												<img src="topsideframe.jpg" alt="" style="display:block; border:0"/>
+											</td>
+											<td width="520" align="center">
+												<img src="ecc-slide.gif" alt=" " style="display:block; border:0" class="w100"  />
+											</td>
+											<td class="mobhide">
+												<img src="toprightframe.jpg" alt="" style="display:block; border:0" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td class="mobhide">
+									<img src="bottommainframe.jpg" alt="" style="display:block; border:0" />
+								</td>
+							</tr>
+							<tr>
+								<td style="color:#dfaa2c; font-size:18px; line-height:22px; font-family:arial, sans-serif; padding-bottom:10px; padding-top:20px">
+									Hi there Alex!
+								</td>
+							</tr>
+							<tr>
+								<td style="color:#ffffff; font-size:13px; line-height:19px; font-family:arial, sans-serif;">
+									Welcome to this month's newsletter, there's been so much going on at ECC headquaters this month, with the introduction of <a href="#" style="color:#dfaa2c">four new delicious cheesecakes</a> a charity bake off and a return of some old favourites. Dig in and see you next time! 
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<!-- TWO COL -->
+					<td style="padding-top:50px">
+						<table cellspacing="0" cellpadding="0" border="0" width="639" class="column">
+							<tr>
+								<td valign="top" class="mobstack2">
+									<table cellspacing="0" cellpadding="0" border="0" width="310" class="w100">
+										<tr>
+											<td class="mobile-image" style="padding-bottom:20px">
+												<img src="hazelnut-minis.jpg" alt=" " style="display:block; border:0" width="310" class="w100" />
+											</td>
+										</tr>
+										<tr>
+											<td style="color:#dfaa2c; font-size:18px; line-height:22px; font-family:arial, sans-serif; padding-bottom:10px;">
+												Say hello to Hazel!
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="color:#ffffff; font-size:13px; line-height:19px; font-family:arial, sans-serif; padding-bottom:20px; max-height:200px" height="180" class="mob-only-height" >
+												Introducing our newest recruit to the ECC league. Hazel, the scrumptious hazel nut praline with a chilli kick. Guarenteed to take the nip off those winter evenings. Formed from 90% caocao and using ethically sourced hazel nuts we're glad to welcome Hazel to the roster! <br/><br/>
+												Find out where to find hazel along with our other favourites below...
+											</td>
+										</tr>
+										<tr>
+											<td class="cta-banner">
+												<img src="banner.jpg" alt="More info" style="display:block; border:0" bgcolor="#f95b9d"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td class="mobhide" width="19">
+									&nbsp;
+								</td>
+								<td valign="top" class="mobstack2">
+									<table cellspacing="0" cellpadding="0" border="0" width="310" class="w100">
+										<tr>
+											<td class="mobile-image" style="padding-bottom:20px">
+												<img src="personal.jpg" alt=" " style="display:block; border:0" width="310" class="w100" />
+											</td>
+										</tr>
+										<tr>
+											<td style="color:#dfaa2c; font-size:18px; line-height:22px; font-family:arial, sans-serif; padding-bottom:10px;">
+												Let's get personal
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" style="color:#ffffff; font-size:13px; line-height:19px; font-family:arial, sans-serif; padding-bottom:20px; max-height:200px" height="180" class="mob-only-height" >
+												At a loss for words? The same old tired "happy birthday" message lost it's impact. Have you thought about getting it on a cheesecake! Pow! That's right we're now offering a personalised messaging service on all our products<br/><br/>
+												What are you waiting for, personalise away!
+											</td>
+										</tr>
+										<tr>
+											<td class="cta-banner">
+												<img src="banner.jpg" alt="More info" style="display:block; border:0;" bgcolor="#f95b9d"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<!-- FOOTER -->
+				<tr>
+					<td style="padding-top:50px" class="nopad">
+						<table cellspacing="0" cellpadding="0" border="0" width="639" class="column">
+							<tr>
+								<td width="310" valign="top" class="mobstack">
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<!-- SOCIAL -->
+										<tr>
+											<td class="social">
+												<img src="social-twitter.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+										<tr>
+											<td class="social">
+												<img src="social-facebook.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+										<tr>
+											<td class="social">
+												<img src="social-email.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+										<tr>
+											<td class="mobhide">
+												<img src="social-delivery.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td width="19" class="mobhide"></td>
+								<td width="310" valign="top" class="mobstack">
+									<table cellspacing="0" cellpadding="0" border="0" width="100%">
+										<tr>
+											<!-- SOCIAL LINKS -->
+											<td class="social">
+												<img src="social-google.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+										<tr>
+											<td class="social">
+												<img src="social-pinterest.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+										<tr>
+											<!-- CAKE -->
+											<td class="mobhide" align="right" style="padding-right:20px">
+												<img src="share-cake.jpg" alt=" " style="display:block; border:0" />
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

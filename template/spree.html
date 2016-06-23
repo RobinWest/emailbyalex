@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+	<meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+	<title>Spree</title>
+	<style type="text/css" preserve="true">
+		td img{
+			display: block;
+		}
+
+		/* Resets: see reset.css for details */
+		 .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+		 .ExternalClass {width: 100%; background-color: #ebebeb;}
+		.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+		body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+		body {margin:0; padding:0;}
+		table {border-spacing:0;}
+		table td {border-collapse:collapse;}
+		.yshortcuts a {border-bottom: none !important;}
+		
+		
+
+		/* Constrain email width for small screens */
+		@media screen and (max-width: 600px) {
+			table[class="container"] {
+				width: 95% !important;
+			}
+		}
+
+		/* Give content more room on mobile */
+		@media screen and (max-width: 480px) {
+			td[class="container-padding"] {
+				padding-left: 12px !important;
+				padding-right: 12px !important;
+			}
+		}
+
+
+		/* Styles for forcing columns to rows */
+		@media only screen and (max-width : 600px) {
+			table[class="columns-container"],
+			table[class="columns-container"] tbody,
+			table[class="columns-container"] tr,
+			table[class="force-full"],
+			td[class="force-full"],
+			td[class="sut-articleContainer"],
+			td[class="articleContainer"],
+			td[class="force-mid"],
+			td[class="sut-articleContainer"] img,
+			td[class="articleContainer"] img,
+			img[class="sut-wrapped"] {
+				width: 100% !important;
+				height: auto !important;
+				margin: 0 auto!important;
+				max-height: none !important;
+				max-width: none !important;
+				display: block;
+
+			}
+			
+			td[class="force-half"]{
+				display: block;
+				width: 50% !important;
+				float: left;
+			}
+
+			/* force container columns to (horizontal) blocks */
+			td[class="force-col"] {
+				display: block!important;
+			}
+			table[class="col-3"] {
+				
+				display: block!important;
+				float: none !important;
+				width: 100% !important;
+
+				/* change left/right padding and margins to top/bottom ones */
+				padding-right: 0 !important;
+			   
+			}
+			table[class="nocolor"] {
+				background: none !important;
+			}
+			td[class="force-full"] img{
+				display: block;
+				width: 100%!important;
+				height: auto!important;
+				max-height: none !important;
+				max-width: none !important;
+			}
+
+			
+			img[class="force-logo"] {
+				display: block;
+				width: 100% !important;
+				height: auto!important;
+				margin: 0 auto!important;
+			}
+			td[class="force-mid"] img{
+				display: block;
+				margin: 0 auto!important;
+				padding-bottom: 20px!important;
+				width: 95%!important;
+				height: auto!important;
+			}
+
+			td[class="force-original"] img{
+				display: block;
+				margin: 0 auto!important;
+				padding-bottom: 20px!important;
+				width: auto!important;
+				height: auto!important;
+			}
+
+			td[class="mob-height"]{
+				height: 20px!important;
+				line-height: 20px !important;
+				font-size: 20px !important;
+			}
+
+			p {
+				text-align: left!important;
+				width: 90%!important;
+				
+				font-size: 12px;
+				color: #8b8c8e;
+				margin: 0 10px!important;
+			}
+
+			
+
+			td[class="invite"] {
+				padding-top: 0!important;
+			}
+
+			/* remove bottom border for last column/row */
+			table[id="last-col-3"] {
+				border-bottom: none !important;
+				margin-bottom: 0;
+			}
+
+			/* align images right and shrink them a bit */
+			img[class="col-3-img"] {
+				float: right;
+				margin-left: 6px;
+				max-width: 130px;
+			}
+
+		
+			.centerMobile{
+				display: block!important;
+				margin: 0 auto!important;
+			}
+			img[class="hideMobile"],
+			table[class="hideMobile"],
+			tr[class="hideMobile"],
+			td[class="hideMobile"]{
+				display: none!important;
+			}
+
+			[class="hideMobileBorder"] td{
+				border: none !important;
+			}
+
+
+			td[class="nopad"]{
+				
+				padding: 0 !important;
+				
+			}
+
+			td[class="fontset"] p{
+				
+				font-size: 15px!important;
+				letter-spacing: 0px!important;
+				line-height: 18px!important;
+				
+			}
+
+			hr[class="dividerwidth"]{
+				width: 95%!important;
+				
+				
+			}
+			
+		}
+
+	 </style>
+</head>
+<body style="margin:0;"  leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" width="100%">
+	
+<!-- 100% wrapper (grey background) -->
+<table border="0" width="100%" cellpadding="0" cellspacing="0" class="force-full" bgcolor="#ffffff">
+	<tr>
+		<td width="100%" align="center" height="40" valign="top" class="hideMobile">
+			<div class="sut-editable"><p style="font-size:10px; color:#282828; font-family: arial, sans-serif; margin-top:10; margin-bottom:0px;">Email looking a little funny?<a href="%sut_campaign%" style="color:#282828; text-decoration:none;"> Click to view in your browser</a></p></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="force-full">
+			<table cellspacing="0" cellpadding="0" border="0" width="644" align="center" class="force-full" bgcolor="#ffffff">
+				<tr>
+					<td align="center" class="force-full"><div class="sut-editable">
+						<img name="spreebanner" src="http://c2911212.r12.cf0.rackcdn.com/spree/spreebanner.jpg" width="644" height="222" id="spreebanner" alt="LOVE SAVING - Spree Book" style="display:block;" /></a></td>
+   						</div>
+   					</td>
+				</tr>
+				<tr>
+					<td class="force-full">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0" class="force-full">
+							<tr>
+								<td style="padding-left:34px; padding-right:34px;" class="nopad">
+									<table cellspacing="0" cellpadding="0" border="0" class="force-full" width="100%">
+										<tr class="hideMobile">
+											<td>
+												<table cellspacing="0" cellpadding="0" border="0" width="100%">
+													<tr>
+														<td width="503">&nbsp;</td>
+														
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td align="center">
+												<table width="100%" cellspacing="0" cellpadding="0" border="0"><!--main content in here-->
+													
+													<!--COLUMNS TO GO IN HERE-->
+													<tr>
+														<td class="sut-articleContainer"><div class="sut-article">
+															<table cellspacing="0" cellpadding="0" border="0" width="100%">
+																<!--2 col here-->
+																<tr>
+																	<td height="20" style="line-height:20px; font-size:20px;"></td>
+																</tr>
+																<tr>
+																	<td>
+																		<div class="sut-editable"><p style="font-family:arial, sans-serif; font-size:17px; color:#464646; margin-top:0; margin-bottom:0px;"><span style="color:#00b5ca; font-weight:bold;">Love Bites</span> - Our featured dining offer today.</p></div>
+																	</td>
+																</tr>
+																<tr>
+																	<td height="20" style="line-height:20px; font-size:20px;">
+																	<hr style="border-top:none; border-bottom:solid 3px #00b5ca;" class="dividerwidth"/>
+																	</td>
+																</tr>
+																<tr>
+																	<td>
+																		<table border="0" cellpadding="0" cellspacing="0" class="columns-container">
+																		  <tr>
+																				<td class="force-col" valign="top">
+
+																					<!-- ### COLUMN 1 ### -->
+																					<table border="0" cellspacing="0" cellpadding="0" width="282" align="left" class="col-3">
+																						<tr>
+																							<td class="force-mid">
+																								<div class="sut-editable"><img name="pizza_express" src="http://c2911212.r12.cf0.rackcdn.com/spree/pizza_express.jpg" width="282" height="213" id="pizza_express" alt="" /></div>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																				<td class="force-col"  valign="top">
+
+																					<!-- ### COLUMN 2 ### -->
+																					<table border="0" cellspacing="0" cellpadding="0" width="294" align="left" class="col-3">
+																						<tr>
+																							<td align="right">
+																								<table cellspacing="0" cellpadding="0" border="0">
+																									<tr>
+																										<td style="padding-left:20px" class="nopad">
+																											<div class="sut-editable"><p style="font-family:arial, sans-serif; font-size:17px; color:#4d4d4d; margin-top:0; margin-bottom:5px; "><span style="font-weight:bold;">Medium and large Pizza Express Pizzas Save 50%. </span>Available at stores throughtout Aberdeen</p>
+																											<p style="font-family:arial, sans-serif; font-size:14px;  color:#00b5ca; margin-top:0; margin-bottom:0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p><br>
+																		                                    <p style="font-family:arial, sans-serif; font-size:14px;  color:#4d4d4de; margin-top:0; margin-bottom:0px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+																										</td>
+																									</tr>
+																								</table>
+																							</td>
+																						</tr>
+																					</table>
+																				</td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td class="mob-height" height="20" style="line-height:20px; font-size:20px;"></td>
+																</tr>
+															</table></div>
+														</td>
+													</tr>
+													<!--COLUMNS END-->
+													
+													
+													
+													<tr>
+														<td>
+															<hr style="border-top:none; border-bottom:solid 1px #c7c7c7;" class="dividerwidth"/>
+														</td>
+													</tr>
+													<tr>
+														<td height="20"></td>
+													</tr>
+													<tr>
+														<td class="fontset">
+															<div class="sut-editable">
+															<p style="font-family:arial, sans-serif; font-size:38px;  color:#00b5ca; margin-top:0px; margin-bottom:0px; font-weight:bold; letter-spacing: -3px;">Share the love...<br></p>
+															<p style="font-family:arial, sans-serif; font-size:24px;  color:#4d4d4d; margin-top:0px; margin-bottom:0px; line-height:30px; letter-spacing: -1px">Tell us all about your days out, family savings and other offers you would like to see from the "Love Saving" team. You could WIN a new Spreebook for you and a a friend.
+															See more on our blog...<a href="http://www.spreebook.com/blog/" style="color:#4d4d4d">spreebook/blog</a></p></div>
+														</td>
+													</tr>
+													<tr>
+														<td height="20"></td>
+													</tr>
+												</table><!--main content ends-->	
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr>
+					<td class="force-full"><div class="sut-editable"><img name="spree_footer" src="http://c2911212.r12.cf0.rackcdn.com/spree/spree_footer.jpg" width="644" height="289" id="spree_footer" alt="Having fun raising funds in your community" style="display:block;" />
+   						</div>
+   					</td>
+  				</tr>
+  				<tr>
+  					<td>
+  						<table cellspacing="0" cellpadding="0" border="0" bgcolor="#00B5CA" class="force-full">
+  							<tr>
+  								<td style="padding-left:34px; padding-right:34px;" class="nopad" align="left">
+  									<div class="sut-editable">
+									<p style="font-family:arial, sans-serif; font-size:11px;  color:#ffffff; margin-top:0; margin-bottom:0px;">Want to find out more? Call us on (01224) 621 000
+										Spree Publications Ltd. 3 Albert Street, Aberdeen AB25 1XX Scotland.
+										Your details and account data are secure and will never be passed on to third parties.
+										If you wish to unsubscribe from all further emails from Spree <a href="%sut_unsubscribe%" style="color:#ffffff;">click here</a>.<br/><br/></p>
+										<p style="font-family:arial, sans-serif; font-size:25px;  color:#ffffff; margin-top:0px; margin-bottom:0px; font-weight:bold; letter-spacing: -1px;"><a href="http://www.spreebook.com/" style="color:#ffffff; text-decoration:none;">spreebook.com</p></div>
+  								</td>
+  							</tr>
+  							<tr>
+  								<td height="30" style="font-size:20px; line-height:20px;"></td>
+  							</tr>
+  						</table>
+  					</td>
+  				</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+	
+ 
+  <tr>
+  	<td height="30" style="font-size:30px; line-height:30px;" class="hideMobile">&nbsp;</td>
+  </tr>
+</table>
+<!--/100% wrapper-->
+</body>
+</html>

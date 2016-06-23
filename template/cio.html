@@ -1,0 +1,918 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="initial-scale=1.0"/>
+<title>CIO Development</title>
+
+<style preserve="true" type="text/css">
+
+
+body{
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+    outline: none;
+    list-style: mso-line-height-rule:exactly;
+     -webkit-text-size-adjust: none;
+     -ms-text-size-adjust:none;
+     -webkit-font-smoothing: antialiased !important;
+ }
+
+.applelinks a {color:inherit !important; text-decoration:none !important;}
+td.applelinks a{
+	color:none!important;
+	text-decoration: none!important; 
+}
+
+table {border-collapse: collapse !important;  padding: 0px !important;  border: none !important;  border-bottom-width:0px !important;  mso-table-lspace:0pt;  mso-table-rspace: 0pt;}
+table td {border-collapse:collapse;}
+
+img {
+border: 0 !important;
+display: block !important;
+outline: none !important;
+}
+
+
+
+/*CUSTOM STYLES*/
+
+p{
+	font-family: Arial, sans-serif;
+	text-align: left;
+	margin-top:0px!important;
+	margin-bottom:0px!important;	
+	line-height: 1.3em!important;
+}
+
+span{
+	font-family: Arial, sans-serif;
+	text-align: left;
+	margin-top:0px!important;
+	margin-bottom:0px!important;	
+	line-height: 1.3em!important;
+}
+
+
+td.hideDesktop{
+	display:none!important;
+}
+
+
+@media screen and (max-width: 600px) {
+	table[class="container"] {
+		width: 90% !important;
+	}
+}
+
+
+
+@media only screen and (max-width : 480px) {
+	table[class~="columns-container"],
+	table[class~="columns-container"] tbody,
+	table[class~="force-full"] tbody,
+	table[class~="force-full"] tr,
+	table[class~="columns-container"] tr,
+	table[class~="force-full"],
+	table[class~="templateColumnContainer"],
+	td[class~="force-full"],
+	td[class~="force-color"],
+	td[class~="sut-articleContainer"],
+	td[class~="articleContainer"],
+	td[class~="force-nopad"],
+	td[class~="force-outterpad"],
+	td[class~="force-pad"],
+	td[class~="force-logo"],
+	td[class~="force-cta"],
+	td[class~="sut-articleContainer"] img,
+	td[class~="articleContainer"] img,
+	img[class~="sut-wrapped"] {
+		width: 100% !important;
+		height: auto !important;
+		margin: 0 auto!important;
+		max-height: none !important;
+		max-width: none !important;
+		display: block!important;
+		min-width: 0!important;
+	}
+	
+
+	/* force container columns to (horizontal) blocks */
+	td[class~="force-col"] {
+		display: block!important;
+	}
+	
+	table[class~="force-full"] p {
+		text-align: left!important;
+		margin: 0 15px!important;
+		font-size:14px!important;
+		line-height:1.3em!important;	
+	}
+
+	table[class~="force-color"],
+	td[class~="force-color"] {
+		background-color: #F2F2F2!important;
+	}
+
+	table[class~="force-colorwhite"],
+	tr[class~="force-colorwhite"],
+	td[class~="force-colorwhite"] {
+		background-color: #ffffff!important;
+	}
+
+	table[class~="force-nocolor"],
+	td[class~="force-nocolor"] {
+		background: none!important;
+	}
+
+
+	td[class~="force-full"] img{
+		display: block;
+		width: 100%!important;
+		height: auto!important;
+		max-height: none !important;
+		max-width: none !important;
+	}
+
+	td[class~="force-mobheight"]{
+		height: 20px!important;
+		line-height: 20px !important;
+		font-size: 20px !important;
+	}
+
+	td[class~="force-mobheightlarge"]{
+		height: 30px!important;
+		line-height: 30px !important;
+		font-size: 30px !important;
+	}
+
+	td[class~="force-mobheightsmall"]{
+		height: 10px!important;
+		line-height: 10px !important;
+		font-size: 10px !important;
+	}
+
+	td[class~="force-mobheightsmaller"]{
+		height: 5px!important;
+		line-height: 5px !important;
+		font-size: 5px !important;
+	}
+
+
+	img[class~="hideMobile"],
+	table[class~="hideMobile"],
+	span[class~="hideMobile"],
+	td[class~="hideMobile"],
+	p[class~="hideMobile"]{
+		display: none!important;
+	}
+
+	
+	td[class~="force-nopad"]{
+		padding: 0px !important;
+		
+	}
+
+	td[class~="force-pad"]{
+		width: 96%!important;
+		padding: 2%!important;	
+	}
+			
+	td[class~="force-show"]{
+		width: 85%!important;
+		margin: 0 auto!important;
+	}
+
+	td[class~="force-show"],
+	td[class~="force-show"] img{
+		display:block!important;
+	}	
+	
+	tr[class~="force-show"],
+	tr[class~="force-show"] img{
+		display:block!important;
+	}
+
+	td[class~="force-logo"]{
+		margin: 0 auto!important;
+		padding-top:20px!important;
+		padding-bottom:10px!important;
+		max-width: 280px!important;
+		max-height: 100%!important;
+		display: block!important;
+	}
+
+	td[class~="force-logo"] img{
+		margin: 0 auto!important;
+		max-width: 280px!important;
+		max-height: 100%!important;
+		display: block!important;
+	}
+
+	td[class~="linedivide"]{
+		height: 1px!important;
+		background-color: #ffffff!important;
+		display: block!important;
+		width: 95%!important;
+		margin: 0 auto!important;
+	}
+
+	
+	li {
+		font-size:16px!important;
+		padding-bottom: 10px!important;
+		line-height:1.3em!important;
+		}
+
+	ol,ul {
+		margin: none!important;
+		padding-left: 25px!important;
+	}
+
+	td[class~="font_h1"] p {
+		font-size:18px!important;
+		color: #C0C0C0!important;	
+		text-align: center!important;
+	} 
+
+	td[class~="font_h2"] p {
+		font-size:17px!important;
+		padding-bottom: 10px!important;	
+	}
+
+	td[class~="align_center"] p {
+		text-align: center!important;
+		color: #242121!important;		
+	}
+
+	td[class~="force-cta"] {
+		display: block!important;
+		padding-top: 15px!important;
+		padding-bottom: 15px!important;
+		
+	}
+
+	td[class~="force-ctatop"] {
+		display: block!important;
+		padding-top: 15px!important;
+		padding-bottom: 15px!important;
+		max-width: 95%!important;
+		
+	}
+
+	td[class~="force-ctatop"] p {
+		text-align: center!important;
+	}
+
+	td[class~="force-cta"] p {
+		text-align: center!important;
+	}
+
+	td[class~="headline"] {
+		padding-top: 20px!important;
+		padding-bottom: 12px!important;
+
+	}
+
+	td[class~="headlinetop"] {
+		padding-top: 20px!important;
+		padding-bottom: 15px!important;
+
+	}
+
+	td[class~="headlinetop"] p {
+		font-size: 18px!important;
+		margin: 0px!important;
+	}
+
+	td[class~="headline"] p {
+		font-size: 18px!important;
+	}
+
+	td[class~="mainp"] p {
+		text-align: left!important;
+		margin: 0!important;
+		font-size:14px!important;
+		line-height:1.3em!important;	
+	}
+
+	table[class~="socialcenter"] {
+		margin: 0 auto!important;
+	}
+
+}
+
+</style>
+</head>
+
+<body style="margin:0;" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#DDDDDD">
+<table sut-multiple-articles="1" cellspacing="0" cellpadding="0" border="0" width="100%" class="columns-container" bgcolor="#DDDDDD">
+		<tr>
+			<td width="750" class="force-pad" align="center">
+				<table cellspacing="0" cellpadding="0" border="0" width="750" class="force-full" bgcolor="#ffffff">
+					<tr>
+						<td width="655" style="padding-left:48px; padding-right:47px;" class="force-nopad">
+							<table cellspacing="0" cellpadding="0" border="0" width="655" class="force-full">
+								<tr>
+									<td width="655" style="padding-top:20px; padding-bottom:20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5c5c5c;" class="hideMobile">
+										<div class="sut-editable">
+											<p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#5c5c5c; margin-top:0; margin-bottom:0; text-align:right;">View this campaign <a href="%sut-campaign%" style="text-decoration:none; color:#e60e64;">online</a></p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td width="655" class="force-nopad" style="padding-bottom:30px">
+										<table cellspacing="0" cellpadding="0" border="0" width="655" class="force-full">
+											<tr>
+												<td width="333" class="force-logo">
+													<div class="sut-editable">
+														<a href="http://www.ciodevelopment.com/"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/logo.jpg" alt="CIO Development" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#F33920;" /></a>
+													</div>
+												</td>
+												<td width="159" class="hideMobile"></td>
+												<td width="163" class="hideMobile" align="right">
+													<table cellspacing="0" cellpadding="0" border="0" width="103">
+														<tr>
+															<td width="30" style="padding-right:7px">
+																<div class="sut-editable">
+																	<a href="http://www.linkedin.com/company/cio-development-ltd"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/linkedin.jpg" alt=" " style="display:block;" width="30" /></a>
+																</div>
+															</td>
+															<td width="30" style="padding-right:7px">
+																<div class="sut-editable">
+																	<a href="https://twitter.com/BrinPlatts"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/twitter.jpg" alt=" " style="display:block;" width="30" /></a>
+																</div>
+															</td>
+															<td width="29">
+																<div class="sut-editable">
+																	<a href="https://www.facebook.com/ciodevelopment"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/facebook.jpg" alt=" " style="display:block;" width="29"  /></a>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!--NAV-->
+					<tr>
+						<td width="750" class="hideMobile">
+							<table cellspacing="0" cellpadding="0" border="0" width="750">
+								<tr>
+									<td width="750">
+										<img src="http://c2911212.r12.cf0.rackcdn.com/cio/navshadow.jpg" alt=" " style="display:block;" />
+									</td>
+								</tr>
+								<tr>
+									<td width="655" bgcolor="#FF7E00" style="padding-top:5px; padding-bottom:15px; padding-left:48px; padding-right:47px">
+										<table cellspacing="0" cellpadding="0" border="0" width="655">
+											<tr>
+												<td width="94">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0; text-align:left;"><a href="http://www.ciodevelopment.com/" style="text-decoration:none; color:#ffffff">Home</a></p>
+													</div>
+												</td>
+												<td width="158">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;"><a href="http://www.ciodevelopment.com/how-we-work/" style="color:#ffffff; text-decoration:none;">How We Work</a></p>
+													</div>
+												</td>
+												<td width="119">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;"><a href="http://www.ciodevelopment.com/services/" style="color:#ffffff; text-decoration:none;">Services</a></p>
+													</div>
+												</td>
+												<td width="99">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;"><a href="http://www.ciodevelopment.com/blog/" style="color:#ffffff; text-decoration:none;">Blog</a></p>
+													</div>
+												</td>
+												<td width="136">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;"><a href="http://www.ciodevelopment.com/workshop/" style="color:#ffffff; text-decoration:none;">Workshops</a></p>
+													</div>
+												</td>
+												<td width="68">
+													<div class="sut-editable">
+														<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0; text-align:right;"><a href="http://www.ciodevelopment.com/contact/" style="color:#ffffff; text-decoration:none;">Contact</a></p>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<!--ARTICLES-->
+					<tr>
+						<td width="750" class="force-full" align="center" bgcolor="#F2F2F2">
+							<table cellspacing="0" cellpadding="0" border="0" width="695" class="force-full force-colorwhite">
+								<tr>
+									<td height="20" style="line-height:0; font-size:0;" class="hideMobile"></td>
+								</tr>
+								<!--FIRST ARTICLE-->
+								<tr>
+									<td width="695" class="sut-articleContainer">
+										<div class="sut-editable">
+											<table cellspacing="0" cellpadding="0" border="0" width="695" class="hideMobile">
+												<tr>
+													<td height="1" style="line-height:0; font-size:0;">
+														<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div class="sut-article">
+											<table cellspacing="0" cellpadding="0" border="0" width="695" class="force-full">
+											<tr>
+												<td height="1" style="line-height:0; font-size:0;" class="hideMobile" bgcolor="#e1e1e1">
+													<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+												</td>
+											</tr>
+											<tr>
+												<td width="695" class="force-full">
+													<table cellspacing="0" cellpadding="0" border="0" width="695" class="force-full">
+														<tr>
+															<td width="1" class="hideMobile" bgcolor="#e1e1e1">
+																<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+															</td>
+															<td width="655" style="padding:19px;" class="force-pad" bgcolor="#ffffff">
+
+																<table cellspacing="0" cellpadding="0" border="0" width="655" class="force-full">
+																	<tr>
+																		<td width="655" class="hideMobile">
+																			<div class="sut-editable">
+																				<img src="http://c2911212.r12.cf0.rackcdn.com/cio/hero.jpg" alt=" " style="display:block;" />
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td width="635" bgcolor="#FF7E00" style="padding-left:10px; padding-right:10px; padding-top:20px; padding-bottom:20px; font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#ffffff;" class="force-nopad force-colorwhite font_h1">
+																			<div class="sut-editable">
+																				<p style="font-family:Arial, Helvetica, sans-serif; font-size:15px; font-weight:bold; color:#ffffff; margin-top:0; margin-bottom:0;">OCTOBER</p>
+																			</div>
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td width="655" class="hideMobile">
+																			<img src="http://c2911212.r12.cf0.rackcdn.com/cio/dropcircle.jpg" alt=" " style="display:block;" />
+																		</td>
+																	</tr>
+																	<tr>
+																		<td width="635" style="padding:10px" class="force-mopad">
+																			<table cellspacing="0" cellpadding="0" border="0" width="635" class="force-full">
+																				<tr>
+																					<td width="635" class="force-full headlinetop" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#242121;">
+																						<div class="sut-editable">
+																							<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#242121; margin-top:0; margin-bottom:0;">Headline Article</p>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td height="10" style="line-height:0; font-size:0;" class="hideMobile">
+																						<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="10" style="display: block" alt=" " />
+																					</td>
+																				</tr>
+																				<tr>
+																					<td width="635" class="force-full mainp" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#242121;">
+																						<div class="sut-editable">
+																							<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#242121; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td height="10" style="line-height:0; font-size:0;" class="hideMobile">
+																						<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="10" style="display: block" alt=" " />
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+
+															</td>
+															<td width="1" class="hideMobile" bgcolor="#e1e1e1">
+																<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td width="695" class="hideMobile" height="11" style="line-height:0; font-size:0;">
+													<img src="http://c2911212.r12.cf0.rackcdn.com/cio/topcta3.jpg" alt=" " style="display:block;" />
+												</td>
+											</tr>
+											<tr>
+												<td width="195" class="force-nopad" style="padding-left:34px;" valign="top">
+													<table cellspacing="0" cellpadding="0" border="0" width="195" class="force-full">
+														<tr>
+															<td width="195" bgcolor="#FF7E00" class="force-nopad force-ctatop" style="padding-left:20px; padding-top:5px; padding-bottom:12px;">
+																<div class="sut-editable">
+																	<p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff; margin-top:0; margin-bottom:0;">READ MORE</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="force-mobheightsmall"></td>
+											</tr>
+											<tr>
+												<td height="30" style="line-height:0; font-size:0;" class="hideMobile"></td>
+											</tr>
+										</table>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td width="695" class="force-full">
+										<table cellspacing="0" cellpadding="0" border="0" width="695" class="force-full">
+											<tr>
+												<td height="1" style="line-height:0; font-size:0;" class="hideMobile" bgcolor="#e1e1e1">
+													<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+												</td>
+											</tr>
+											<tr>
+												<td width="695" class="force-full">
+													<table cellspacing="0" cellpadding="0" border="0" width="695" class="force-full">
+														<tr>
+															<td width="1" class="hideMobile" bgcolor="#e1e1e1">
+																<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+															</td>
+															<td width="655" style="padding:19px;" class="force-pad sut-articleContainer" bgcolor="#ffffff">
+																<div class="sut-article">
+																<table cellspacing="0" cellpadding="0" border="0" width="655" class="columns-container">
+																	<tr>
+																		<td class="force-col" valign="top">
+																			<table cellspacing="0" cellpadding="0" border="0" width="336" class="force-full">
+																				<tr>
+																					<td width="336" class="force-full" style="min-width:336px">
+																						<div class="sut-editable">
+																							<img src="http://c2911212.r12.cf0.rackcdn.com/cio/artimage.jpg" alt=" " style="display:block" />
+																						</div>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																		<td class="force-col" valign="top" bgcolor="#F5391E">
+																			<table cellspacing="0" cellpadding="0" border="0" width="319" class="force-full">
+																				<tr>
+																					<td width="264" style="padding-left:20px; padding-right:35px; padding-top:20px; padding-bottom:20px;" class="force-nopad">
+																						<table cellspacing="0" cellpadding="0" border="0" width="264" class="force-full">
+																							<tr>
+																								<td width="264" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td height="20" style="line-height:0; font-size:0;" class="hideMobile"></td>
+																							</tr>
+																							<tr>
+																								<td width="264" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+																									</div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td height="30" style="line-height:0; font-size:0;" class="force-mobheight"></td>
+																							</tr>
+																							<tr>
+																								<td height="43" bgcolor="#C92E18" width="166" style="padding-left:20px; " class="force-nopad force-cta">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff; margin-top:0; margin-bottom:0;">READ MORE</p>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td height="20" style="line-hight:0; font-size:0;"></td>
+																	</tr>
+																</table>
+																</div>
+																<!--SECOND MAIN ARTICLE-->
+																<!--DIV AREA-->
+																<table cellspacing="0" cellpadding="0" border="0" width="655" class="columns-container">
+																	<tr>
+																		<td class="force-col sut-articleContainer" valign="top" bgcolor="#F5391E">
+																			<div class="sut-article">
+																			<table cellspacing="0" cellpadding="0" border="0" width="336" class="force-full">
+																				<tr>
+																					<td width="336" class="force-full">
+																						<div class="sut-editable">
+																							<img src="http://c2911212.r12.cf0.rackcdn.com/cio/artimage.jpg" alt=" " style="display:block;" />
+																						</div>
+																					</td>
+																				</tr>
+																				<tr>
+																					<td width="285" style="padding-left:20px; padding-right:30px; padding-top:20px; padding-bottom:20px;" class="force-nopad">
+																						<table>
+																							<tr>
+																								<td width="285" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td height="20" style="line-height:0; font-size:0;" class="hideMobile"></td>
+																							</tr>
+																							<tr>
+																								<td width="285" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br/><br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+																									</div>
+																								</td>
+																							</tr>
+																							<tr>
+																								<td height="20" style="line-height:0; font-size:0;" class="force-mobheight"></td>
+																							</tr>
+																							<tr>
+																								<td height="43" bgcolor="#CB2F18" width="162" style="padding-left:20px; font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff;" class="force-nopad force-cta">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:bold; color:#ffffff; margin-top:0; margin-bottom:0;">READ MORE</p>
+																									</div>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																				<!--WHITE SPLIT-->
+																				
+																			</table>
+																			</div>
+																		</td>
+																		<td class="force-col sut-articleContainer" valign="top" bgcolor="#FF7E00">
+																			<div class="sut-article">
+																				<table cellspacing="0" cellpadding="0" border="0" width="319" class="force-full">
+																					<tr>
+																						<td width="264" style="padding-left:20px; padding-right:35px; padding-top:20px;" class="force-nopad">
+																							<table cellspacing="0" cellpadding="0" border="0" width="264" class="force-full">
+																								<tr>
+																									<td width="264" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="15" style="line-height:0; font-size:0;" class="hideMobile">
+																										<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="15" style="display: block" alt=" " />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td width="264" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="20" style="line-height:0; font-size:0">
+																										
+																									</td>
+																								</tr>
+																								<tr>
+																									<td bgcolor="#ffffff" height="1" style="line-height:0; font-size:0" class="linedivide"></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</div>
+																			<div class="sut-article">
+																				<table cellspacing="0" cellpadding="0" border="0" width="319" class="force-full">
+																					<tr>
+																						<td width="264" style="padding-left:20px; padding-right:35px; padding-top:20px;" class="force-nopad">
+																							<table cellspacing="0" cellpadding="0" border="0" width="264" class="force-full">
+																								<tr>
+																									<td width="264" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="15" style="line-height:0; font-size:0;" class="hideMobile">
+																										<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="15" style="display: block" alt=" " />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td width="264" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="20" style="line-height:0; font-size:0">
+																										
+																									</td>
+																								</tr>
+																								<tr>
+																									<td bgcolor="#ffffff" height="1" style="line-height:0; font-size:0" class="linedivide"></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</div>
+																			<div class="sut-article">
+																				<table cellspacing="0" cellpadding="0" border="0" width="319" class="force-full">
+																					<tr>
+																						<td width="264" style="padding-left:20px; padding-right:35px; padding-top:20px;" class="force-nopad">
+																							<table cellspacing="0" cellpadding="0" border="0" width="264" class="force-full">
+																								<tr>
+																									<td width="264" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="15" style="line-height:0; font-size:0;" class="hideMobile">
+																										<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="15" style="display: block" alt=" " />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td width="264" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="20" style="line-height:0; font-size:0">
+																										
+																									</td>
+																								</tr>
+																								<tr>
+																									<td bgcolor="#ffffff" height="1" style="line-height:0; font-size:0" class="linedivide"></td>
+																								</tr>
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</div>
+																			<div class="sut-article">
+																				<table cellspacing="0" cellpadding="0" border="0" width="319" class="force-full">
+																					<tr>
+																						<td width="264" style="padding-left:20px; padding-right:35px; padding-top:20px;" class="force-nopad">
+																							<table cellspacing="0" cellpadding="0" border="0" width="264" class="force-full">
+																								<tr>
+																									<td width="264" class="force-full headline" style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:16px; color:#ffffff; margin-top:0; margin-bottom:0;">Headline Article</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="15" style="line-height:0; font-size:0;" class="hideMobile">
+																										<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="15" style="display: block" alt=" " />
+																									</td>
+																								</tr>
+																								<tr>
+																									<td width="264" class="force-full" style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff;">
+																									<div class="sut-editable">
+																										<p style="font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#ffffff; margin-top:0; margin-bottom:0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+																									</div>
+																								</td>
+																								</tr>
+																								<tr>
+																									<td height="20" style="line-height:0; font-size:0">
+																										
+																									</td>
+																								</tr>
+																								
+																							</table>
+																						</td>
+																					</tr>
+																				</table>
+																			</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td height="30" style="line-height:0; font-size:0;" class="force-mobheight"></td>
+																	</tr>
+																</table>
+															</td>
+															<td width="1" class="hideMobile" bgcolor="#e1e1e1">
+																<img src="http://c3331334.r34.cf0.rackcdn.com/spacer.gif" width="1" height="1" style="display: block" alt=" " />
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td width="695" class="hideMobile">
+													<table cellspacing="0" cellpadding="0" border="0" width="695">
+														<tr>
+															<td width="318">
+																<img src="http://c2911212.r12.cf0.rackcdn.com/cio/footer1.jpg" alt=" " style="display:block;" />
+															</td>
+															<td width="206">
+																<a href="http://www.ciodevelopment.com/contact/"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/contactbutton.jpg" alt="Contact Us" /></a>
+															</td>
+															<td width="45">
+																<div class="sut-editable"><a href="https://www.facebook.com/ciodevelopment"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/footface.jpg" alt=" " style="display:block;" /></a></div>
+															</td>
+															<td width="50">
+																<div class="sut-editable"><a href="http://www.linkedin.com/company/cio-development-ltd"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/footin.jpg" alt=" " style="display:block;" /></a></div>
+															</td>
+															<td width="44">
+																<div class="sut-editable"><a href="https://twitter.com/BrinPlatts"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/foottwitter.jpg" alt=" " style="display:block;" /></a></div>
+															</td>
+															<td width="32">
+																<img src="http://c2911212.r12.cf0.rackcdn.com/cio/foot2.jpg" alt=" " style="display:block;" />
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td width="655" style="padding-left:48px; padding-right:47px; padding-top:25px; padding-bottom:25px;" class="force-nopad force-nocolor" bgcolor="#F2F2F2">
+							<table cellspacing="0" cellpadding="0" border="0" width="655" class="columns-container">
+								<tr>
+									<td class="force-col hideMobile" valign="top" width="384">
+										<div class="sut-editable">
+											<p style="font-family: Arial, Helvetica, sans-serif; color:#a4a4a4; margin-top:0; margin-bottom:0; font-size:12px;">
+												Registered Office: The Gables, Old Perry St., Chislehurst, BR7 6PP
+											</p>
+										</div>
+									</td>
+									<td class="force-col force-full align_center" valign="top" width="170" style="min-width:160px; font-family: Arial, Helvetica, sans-serif; color:#e60e64;">
+										<div class="sut-editable">
+											<p style="font-family: Arial, Helvetica, sans-serif; color:#e60e64; margin-top:0; margin-bottom:0; font-size:12px;">
+												Phone: +44 (0) 7973 745 640
+											</p>
+										</div>
+									</td>
+									<td class="force-col force-full align_center" valign="top" width="89" style="min-width:89px; font-family: Arial, Helvetica, sans-serif; color:#e60e64;">
+										<div class="sut-editable">
+											<p style="font-family: Arial, Helvetica, sans-serif; color:#e60e64; margin-top:0; margin-bottom:0; font-size:12px; text-align:right;">
+												Email us <a href="mailto:#" style="color:#e60e64">here</a> 
+											</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td height="30" style="line-height:0; font-size:0" class="force-mobheight"></td>
+								</tr>
+								<tr>
+									<td width="100%" class="force-show centersocial" style="display:none;">
+										<table cellspacing="0" cellpadding="0" border="0" width="163" class="socialcenter">
+											<tr>
+												<td width="50" style="padding-right:7px;">
+													<div class="sut-editable">
+														<a href="http://www.linkedin.com/company/cio-development-ltd"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/linkedin.jpg" alt=" " style="display:block;" /></a>
+													</div>
+												</td>
+												<td width="50" style="padding-right:7px;">
+													<div class="sut-editable">
+														<a href="https://twitter.com/BrinPlatts"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/twitter.jpg" alt=" " style="display:block;" /></a>
+													</div>
+												</td>
+												<td width="49">
+													<div class="sut-editable">
+														<a href="https://www.facebook.com/ciodevelopment"><img src="http://c2911212.r12.cf0.rackcdn.com/cio/facebook.jpg" alt=" " style="display:block;" /></a>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="30" style="line-height:0; font-size:0" class="force-mobheight"></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>	
+</body>
+</html>
