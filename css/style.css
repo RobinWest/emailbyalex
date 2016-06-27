@@ -31,11 +31,11 @@ body {padding: 0;margin: 0;}
 
 
 a{cursor: pointer; color: #ffffff; text-decoration:none; opacity: 1}
-p{font-family: 'Roboto', sans-serif; font-size: 16px; line-height:26px;}
+p{font-family: 'Roboto', sans-serif; font-size: 16px; line-height:26px; font-weight:300;}
 .cta p{font-family: 'Roboto', sans-serif; font-size: 15px; line-height:16px;}
 .home-cta p{font-family: 'Roboto', sans-serif; font-size: 15px; line-height:16px;}
 h1{font-family: 'Nixie One', cursive; font-size:2em;color: #000000; padding-bottom:30px; line-height:1.3em;}
-h2{font-family: 'Roboto', sans-serif; font-size:1.5em; color: #525252; padding-bottom:20px;}
+h2{font-family: 'Roboto', sans-serif; font-size:1.5em; color: #525252; padding-bottom:20px; font-weight: 300;}
 h3{font-family: 'Roboto', sans-serif; font-size:2em; color: #525252; padding-bottom:20px;}
 h4{ font-family: 'Roboto', sans-serif; font-size: 15px; color: #525252; padding-bottom: 20px; line-height:25px;}
 .campaign-info h2 , .campaign-info h4, .campaign-info p {color: #ffffff;}
@@ -150,10 +150,10 @@ h4{ font-family: 'Roboto', sans-serif; font-size: 15px; color: #525252; padding-
     .fixed-container{position:static;width:100%; }  
     .scroll-container{margin-left:0;}
     #work-area{padding: 0!important; background-color: #a7a7a7;}
-    .details{padding: 3em 3em 3em; max-height:100%; overflow: auto;}
+    .details{padding: 3em 2em 2em; max-height:100%; overflow: auto;}
     .campaign-info{margin: 3em;}
     .campaign-info p{margin: 2em 0 1em;}
-    .about-me{margin:3em 0 1.5em; line-height: 1.8em; padding-bottom:20px;}
+    .about-me{margin:2em 0 1.5em; line-height: 1.8em; padding-bottom:20px;}
      .about-me-nopad{margin:3em 0 1.5em; line-height: 1.8em;}
     .thumbnails{width: 100%; }
     .content-two {margin-bottom: 0; height: 200px;}
@@ -164,8 +164,8 @@ h4{ font-family: 'Roboto', sans-serif; font-size: 15px; color: #525252; padding-
     .mob-hide{display: none;}
     .mob-show{display: block!important;}
     .logo-container{margin 0 auto;}
-    .logo-type h1{float: left; padding-left: 1em; padding-top: 0.5em; font-size:2em;}
-    #logo{ width: 8em; height: 8em; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;
+    .logo-type h1{float: left; padding-left: 0.8em; padding-top: 0.5em; font-size:1.9em;}
+    #logo{ width: 6.5em; height: 6.5em; -webkit-border-radius: 100%; -moz-border-radius: 100%; border-radius: 100%;
           background-image: url("http://email-images.justgiving.com.s3.amazonaws.com/z_alex/logo.png"); background-repeat: no-repeat; background-size: 70%; background-position:50% 50%; float: left; }
   
     .twitter, .linkedin, .email {width: 1.5em; height: 1.5em;}
