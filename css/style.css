@@ -107,7 +107,7 @@ h4{ font-family: 'Roboto', sans-serif; font-size: 15px; color: #525252; padding-
 .content-two{ margin-bottom: 0.5em; height: 430px; border-radius: 2px;}
 .content-campaign{ margin-bottom: 0.5em; height: 430px; border-radius: 2px; }
 .smaller-box-left-one{ height: 210px; margin-bottom: 10px; overflow:hidden; width: auto; border-radius: 2px;  }
-.smaller-box-left-two{ background-color: #BADA55; height: 210px; border-radius: 2px; }
+.smaller-box-left-two{ height: 210px; border-radius: 2px; }
 .large-box{background-color: #666666; height: 400px; border-radius: 2px;  }
 .thumbnails{margin: 0 auto; width: 90%; height: auto; max-width: 800px;}
 .social{ padding: 2em 0;}
@@ -154,7 +154,7 @@ h4{ font-family: 'Roboto', sans-serif; font-size: 15px; color: #525252; padding-
     .campaign-info{margin: 3em;}
     .campaign-info p{margin: 2em 0 1em;}
     .about-me{margin:2em 0 1.5em; line-height: 1.8em; padding-bottom:20px;}
-     .about-me-nopad{margin:3em 0 1.5em; line-height: 1.8em;}
+     .about-me-nopad{margin:2.2em 0 1.5em; line-height: 1.8em;}
     .thumbnails{width: 100%; }
     .content-two {margin-bottom: 0; height: 200px;}
     .content-campaign{margin-bottom: 0; max-height: 100%;}
