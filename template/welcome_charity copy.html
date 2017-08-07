@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+ <o:AllowPNG/>
+ <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<title>JustGiving</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://home.justgiving.com/favicon.ico" type="image/x-icon" />
+<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500" />
+<meta name="format-detection" content="telephone=no" />
+<style type="text/css">
+
+    html{height: 100%; width: 100%;}
+
+    [style*="Roboto"] {font-family: 'Roboto', Arial, sans-serif !important;}
+
+    div[style*="margin: 16px 0"] { margin:0 !important;}
+
+     /* GMAIL */
+    .gmail-show {
+        height: auto !important;
+        width: auto !important;
+        max-width: none !important;
+        max-height: none !important;
+        overflow: auto !important;
+        visibility: visible !important;
+        display: block !important;
+    }
+
+
+   .gmailfix {
+   display:none;
+   display:none!important;
+  }
+
+  .show{display: block!important;}
+  .hide{display: none!important;}   
+
+  *[class="hide"] {
+    max-height:0; /* Gmail*/
+    display:none; /* Generic*/
+    mso-hide:all; /* Outlook clients*/
+    overflow:hidden; /* Generic */
+    font-size:0; /* Be careful with this one, only use if absolutely required */
+} 
+
+div[class=mobilecontent]{
+    display: block !important;
+    max-height: none !important;
+  }  
+    
+
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode: bicubic; }
+
+    /* RESET STYLES */
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    body { height: 100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+
+
+     /* JG STYLES */
+
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+        table.body { min-width: 100%;}
+        div, p, a, li, td {-webkit-text-size-adjust: none;-ms-text-size-adjust: none;}
+        p {margin:0; padding:0; margin-bottom:0;}
+        .ReadMsgBody { width:100%; }
+        .ExternalClass { width:100%; } 
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div { line-height:100%; }
+        #outlook a { padding:0; }
+        table td {border-collapse: collapse;}   
+        .breakline {-ms-word-break: break-word; word-break: break-word; -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;}
+
+
+
+      @media only screen{
+        /* typeface */
+        @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400,300,500;
+        src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+        }
+    }
+
+    .cta:hover{background-color: #175299;
+      cursor: hand;
+    }
+
+
+
+    /*ANIMATION*/
+
+ 
+
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    .pop-in {
+        -webkit-animation: pop-in .50s ease-in;
+        -moz-animation: pop-in .50s ease-in;
+        -o-animation: pop-in .50s ease-in;
+        animation: pop-in .50s ease-in;
+    }
+      
+      @keyframes pop-in {
+    0% { opacity: 0;transform: scale(0.1); }
+    80% { opacity: 1;transform: scale(1.2); }
+    100% { opacity: 1;transform: scale(1); }
+    }
+
+    @-webkit-keyframes pop-in {
+    0% { opacity: 0;-webkit-transform: scale(0.1); }
+    80% { opacity: 1;-webkit-transform: scale(1.2); }
+    100% { opacity: 1;-webkit-transform: scale(1); }
+    }
+    @-moz-keyframes pop-in {
+    0% { opacity: 0;-moz-transform: scale(0.1); }
+    80% { opacity: 1;-moz-transform: scale(1.2); }
+    100% { opacity: 1;-moz-transform: scale(1); }
+    }
+
+
+     .fadeInDown {
+      animation-name: fadeInDown;
+      -webkit-animation-name: fadeInDown;
+      animation-duration: 1.6s;
+      -webkit-animation-duration: 1.6s;}
+
+      @keyframes fadeInDown{
+     0% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  50% {
+      opacity: 0;
+      transform: translateY(-30px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }}
+
+        
+         /*IPAD specific*/
+          @media screen and (max-width: 800px) and (-webkit-min-device-pixel-ratio: 0) {
+           .nopad_ipad{padding: 0!important;}
+           .wrapper{width:100% !important; height:auto !important;} 
+            }
+
+
+        @media screen and (max-width: 480px) {
+            .full_width{width:100%!important; max-width: 100%!important;}
+            .hide_mob{display: none!important;}
+            .no_pad{padding: 0!important;}
+            .hero{padding-top: 20px!important;}
+            .no_border{border: none!important;}
+            .causes_logo{width: 75%!important; height: auto!important; margin: 0 auto!important; padding: 10px 0!Important;}
+            .extra_section{background-color: aliceblue!important; padding-top: 24px!important; padding-bottom:24px!important;}
+            .social_background{background-color: #f1f1f1!important;}
+            .cta, .cta2{padding: 15px 0!important;}
+            .nav_logo{text-align: center!important; padding: 10px 0!important;}
+            .cta_width{width:100%!important; max-width: 300px!important;}
+            .mob_text{font-size: 16px!important; line-height: 28px!important;}
+            .mob_heading{font-size: 22px!important; line-height: 30px!important;}
+            .mob_heading,.mob_text{padding: 0 2%!important; } 
+            .type_center{text-align: center;!important;}
+            .show{display: block!important; height: auto!important;}
+            .hide{display: none!important;}
+            .type_center{text-align: center;!important;}
+              .mob-height{height: 80px!important;}
+              .responsive_column{display: block; width: 100%!important; padding: 0!important; margin: 0 auto!important; text-align: center!important;}
+                .image_responsive{margin: 0 auto!important; padding-bottom: 10px!important;}
+
+
+          }
+
+
+</style>
+<!--[if mso]>
+  <style type="text/css" media="all">
+  tr {font-size:0; mso-line-height-alt:0; mso-margin-top-alt:0}
+  p, div, span{margin-top:0; margin-bottom:0}
+  h1,h2,h3,h4,h5,h6,p,a,span,td,strong{font-family: Arial, Helvetica, sans-serif !important;}
+  no-outlook{display:none!important;}
+  outlookblock{display:block!important}
+  table{border-collapse: collapse;}
+  </style>
+<![endif]-->
+</head>
+
+
+<body style="-webkit-font-smoothing:antialiased; width:100% !important; -webkit-text-size-adjust:none!important; margin:0;" width="100%" min-width="100%" >
+    
+<center>
+
+<table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#e5e5e5" class="wrapper" style="border-collapse: collapse;">
+
+<!--SNIPPET  -->
+    <tr>
+    <td align="center" bgcolor="#AD29B6"  class="hide_mob">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+    <tr>
+    <td style="font-size:1px; line-height:1px">&nbsp;</td>
+    <td width="500" align="center">
+
+            <!--CONTENT -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width:500px;">
+              <tr>
+              <td style="padding-top:10px; padding-bottom:10px; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#ffffff; font-size:12px; line-height:12px;">
+              Launch your first crowdfunding campaign
+              </td> 
+              </tr>
+         </table> 
+            <!--CONTENT END  -->
+
+     </td>
+     <td style="font-size:1px; line-height:1px">&nbsp;</td>
+     </tr>
+    </table> 
+    </td>
+    </tr>
+
+
+
+<!-- LOGO -->
+
+    <tr>
+    <td align="center"  bgcolor="#FFFFFF">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+    <td style="font-size:1px; line-height:1px">&nbsp;</td>
+    <td width="500" align="center">
+
+            <!--CONTENT -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width:500px">
+              <tr>
+              <td style="padding: 20px 0;" class="nav_logo">
+      <a href="http://pages.justgiving.com/causes.html">
+                <img src="http://email-images.justgiving.com.s3.amazonaws.com/2020_assets/justgiving-for-charities.png" alt="JustGiving for causes" style="display:block; border:0; font-family: Arial, Helvetica, sans-serif, 'Roboto'; font-size:16px; color:#76207e;" width="260" class="causes_logo"/>
+                </a>
+              </td> 
+              </tr>
+
+         </table> 
+            <!--CONTENT END  -->
+
+     </td>
+     <td style="font-size:1px; line-height:1px">&nbsp;</td>
+     </tr>
+     </table> 
+     </td>
+     </tr>
+
+
+     <!-- MAIN BODY -->
+
+    <tr>
+    <td align="center"  bgcolor="#F1F1F1" class="no_pad" style="padding:30px 0;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+    <td style="font-size:1px; line-height:1px">&nbsp;</td>
+    <td width="500" align="center" class="full_width">
+
+       <!--CONTENT -->
+       <table border="0" cellpadding="0" cellspacing="0" width="100%"  style="max-width:500px">
+       <tr>
+       <td>
+    <!--CARD AREA  -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="max-width:500px">
+          <tr>
+          <td>
+
+          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px;">
+               <tr>
+               <td bgcolor="#ffffff" style="text-align:center; color:#ffffff;" align="center" >
+    
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px" align="center" role="presentation" >
+                    <tr>
+                      <td bgcolor="#4A90E2" style="padding:30px 0 20px 0" width="100%">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:500px" align="center">
+                          <tr>
+                    <td style="text-align:center; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#ffffff; font-size:20px; line-height:24px; font-weight:400;" class="mob_heading">
+                            Welcome %%CharityName%%! 
+                    </td>
+                    </tr>
+                    <tr>
+                      <td height="5" style="line-height:1px; font-size:1px"></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align:center; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#ffffff; font-size:14px; line-height:24px; font-weight:300;" class="mob_text">%%FirstName%%, it's great to have you onboard</td>
+                    </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  
+                   <tr>
+                   <td align="center" width="100%" class="full_width" class="hide">
+
+                    
+                         
+                    <img src="http://email-images.justgiving.com.s3.amazonaws.com/2016-10-26-Welcome/BalloonRide_final.png" alt="The only way is up" style="display:block;border:0; color:#ffffff; font-size:18px; text-align:center;" width="500" height="auto" class="full_width hide">
+                       
+                    </td>
+                    <tr/>
+
+                    <tr>
+                    <div class="mobilecontent show" style="mso-hide:all;display:none;max-height:0px;overflow:hidden;">
+                   <td align="center" width="100%" class="show">
+    
+                    <img src="http://email-images.justgiving.com.s3.amazonaws.com/2016-10-26-Welcome/hotair.gif" alt="The only way is up" style="display:none;border:0; color:#ffffff; font-size:18px; text-align:center;" width="100%" height="0" class="show">
+                       
+                    </td>
+                  </div>
+                    <tr/>
+                  </table> 
+                
+              </td>
+              </tr>
+
+              <tr>
+              <td style="border-left:1px solid #e5e5e5; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; border-radius:2px; padding:0 24px 24px 24px; max-width:450px" class="no_border" bgcolor="#FFFFFF">
+                    
+                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="text-align:center; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:19px; line-height:24px; font-weight:300;" class="mob_heading">
+                            You're live on JustGiving...
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                      <td height="15" style="line-height:1px; font-size:1px"></td>
+                    </tr>
+                 <tr>
+                 <td style="text-align:center; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:13px; line-height:21px; font-weight:300;" class="mob_text">
+                 … And your very own charity account is ready and waiting for you. From here you can personalise your charity profile, download a donate button and launch your first crowdfunding campaign!
+                      
+                 </td>
+                 </tr>
+
+                 <tr>
+                 <td height="20">&nbsp;</td>
+                 </tr>
+                 
+
+                 <tr>
+                 <td align="center" style="padding:15px 0;">
+                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                 <tr>
+                 <td style="font-size:1px; line-height:1px">&nbsp;</td>
+
+                  <td width="300" align="center" class="full_width">
+                  <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:300px;">
+                  <tr>
+                  <td style="text-align:center; padding:13px; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#ffffff; font-size:14px; line-height:14px; font-weight:400; max-width:300px; border-radius:2px;" bgcolor="#175299" class="cta">
+                  <a href="https://www.justgiving.com/charities/beta/profile" style="text-decoration:none!important; color:#ffffff;">Get started</a>
+                  </td>
+                  </tr>
+                  </table>
+                  </td>
+
+                  <td style="font-size:1px; line-height:1px">&nbsp;</td>
+                  </tr>
+                  </table>
+                      
+                  </td>
+                  </tr>
+                  <tr>
+                    <td height="30" style="line-height:1px; font-size:1px"></td>
+                  </tr>
+
+                  <tr>
+                      <td align="center" style="padding:15px 0;">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                        
+                        <tr>
+                        <td style="font-size:1px; line-height:1px">&nbsp;</td>
+
+                        <td width="400" align="center" class="full_width">
+
+                          <!-- TWO COLUMN STARTS HERE -->
+
+                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td class="responsive_column" style="padding-right:30px">
+                        <img src="http://email-images.justgiving.com.s3.amazonaws.com/2020_assets/webinar_icon.png" alt=" " width="100" height="auto" style="display:block; border:0" class="image_responsive ">
+                        </td>
+
+                        <td class="responsive_column">
+                        <!-- TEXT -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="mob_heading" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:16px; line-height:16px; font-weight:400;">
+                            <a href="http://pages.justgiving.com/JustGiving-account-tour.html?" style="text-decoration:none; color:#262626">'Take a tour of Just Giving’ webinar</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="5" style="line-height:1px; font-size:1px"></td>
+                          </tr>
+                          <tr>
+                            <td class="mob_text" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:13px; line-height:21px; font-weight:300;">
+                             Sign up to our free webinar where we’ll show you how to make the most of your account.
+                            </td>
+                          </tr>
+                        </table>
+                        </td>
+ 
+                      </tr>
+                      <tr>
+                        <td height="40" style="line-height:1px; font-size:1px">&nbsp;</td>
+                      </tr>
+                      <!-- PROMOTION -->
+                      <tr>
+                        <td class="responsive_column" style="padding-right:30px">
+                        <img src="http://email-images.justgiving.com.s3.amazonaws.com/2020_assets/Stopwatch.png" alt=" " width="100" height="auto" style="display:block; border:0" class="image_responsive">
+                        </td>
+
+                        <td class="responsive_column">
+                        <!-- TEXT -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="mob_heading" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:16px; line-height:16px; font-weight:400;">
+                             <a href="http://pages.justgiving.com/causes-products-campaign-pages.html" style="text-decoration:none; color:#262626">Launch a Campaign in minutes</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="5" style="line-height:1px; font-size:1px"></td>
+                          </tr>
+                          <tr>
+                            <td class="mob_text" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:13px; line-height:21px; font-weight:300;">
+                             Harness the power of the crowd to raise the funds you need for a specific project or appeal.
+                            </td>
+                          </tr>
+                        </table>
+                                                  
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td height="40" style="line-height:1px; font-size:1px">&nbsp;</td>
+                      </tr>
+                      <!-- BRANDING -->
+                      <tr>
+                        <td class="responsive_column" style="padding-right:30px">
+                        <img src="http://email-images.justgiving.com.s3.amazonaws.com/2020_assets/Buttons.png" alt=" " width="110" height="auto" style="display:block; border:0" class="image_responsive">
+                        </td>
+
+                        <td class="responsive_column">
+                        <!-- TEXT -->
+                        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="mob_heading" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:16px; line-height:16px; font-weight:400;">
+                             <a href="https://www.justgiving.com/charities/Fundraising/buttons" style="text-decoration:none; color:#262626">Make it easy to donate with buttons</a> 
+                            </td>
+                          </tr>
+                          <tr>
+                            <td height="5" style="line-height:1px; font-size:1px"></td>
+                          </tr>
+                          <tr>
+                            <td class="mob_text" style="text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:13px; line-height:21px; font-weight:300;">
+                             Add buttons and widgets to your website and other digital platforms for quicker, easier donating.
+                            </td>
+                          </tr>
+                        </table>
+                                                  
+                        </td>
+                      </tr>
+                      
+
+                    </table>
+
+                    <!-- ENDS HERE -->
+
+                        </td>
+
+                        <td style="font-size:1px; line-height:1px">&nbsp;</td>
+                        </tr>  
+
+                        </table>
+                      </td>
+                    </tr>  
+                            
+
+                 </table>
+              </td>
+              </tr>
+              <!-- SECOND SECTION -->
+
+              <tr>
+              <td height="10" style="line-height:1px; font-size:1px" class="hide_mob"></td>
+              </tr>
+              </table>
+
+          </td> 
+          </tr>
+      </table> 
+          <!--CARD AREA END  -->
+    
+    <!--SOCIAL FOOTER -->
+              <table border="0" cellpadding="0" cellspacing="0" width="100%"  style="max-width:500px">
+              <tr>
+              <td height="10" style="line-height:10px; font-size:10px" class="hide_mob"></td>
+          </tr>
+
+          <tr>
+          <td style="padding-left:24px; padding-right:24px; text-align:left; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#262626; font-size:13px; line-height:21px; font-weight:300;" class="extra_section">
+            
+              Any questions? <a href="https://help.justgiving.com/hc/en-us/requests/new?ticket_form_id=8991" style="color:#175299; text-decoration:none;">Send us an email</a> and we’d be happy to help you.
+           
+          </td>
+          </tr>
+
+          <tr>
+          <td height="40" style="line-height:0; font-size:0"></td>
+          </tr>
+
+          <tr>
+          <td style="text-align:center; font-family: Arial, Helvetica, sans-serif, 'Roboto'; color:#959595; font-size:12px; line-height:17px;" class="type_center">Find us on</td>
+          </tr>
+    
+    <tr>
+          <td align="center" style="padding-top:20px;">
+              <table cellspacing="0" cellpadding="0" border="0" width="150" >
+
+               <tr>
+                      <td align="center" style="padding-bottom:20px;">
+                       <table cellspacing="0" cellpadding="0" border="0" width="150" >
+                      <tr>
+                      <td style="padding-right:15px;"><div class="mktEditable" id="edit_Twiter" ><a href="http://www.twitter.com/jgcauses" target="_blank"><img src="http://email-images.justgiving.com.s3.amazonaws.com/retinaimages/twitterretina.png" alt="Twitter" style="display:block; border:0; font-size:12px; color:#01ABE9" width="38" /></a></div>
+                      </td>
+
+                      <td style="padding-right:14px;"><div class="mktEditable" id="edit_Linkedin" ><a href="https://uk.linkedin.com/company/justgiving" target="_blank"><img src="http://email-images.justgiving.com.s3.amazonaws.com/retinaimages/linkedinretina.png" alt="LinkedIn" style="display:block; border:0; font-size:12px; color:#007BB6" width="38" /></a></div>
+                      </td>
+
+                      <td><div class="mktEditable" id="edit_Facebook"><a href="http://www.facebook.com/justgiving" target="_blank"><img src="http://email-images.justgiving.com.s3.amazonaws.com/retinaimages/facebookretina.png" alt="Facebook" style="display:block;border:0; font-size:12px; color:#3A5898" width="38" /></a></div>
+                      </td>
+                      </tr>
+                      </table>
+                      </td>
+                      </tr>
+
+            </table>
+    </td>
+          </tr> 
+          </table>
+
+        </td> 
+        </tr>
+       </table> 
+        <!--CONTENT END  -->
+
+     </td>
+     <td style="font-size:1px; line-height:1px">&nbsp;</td>
+     </tr>
+     </table> 
+     </td>
+     </tr>  
+
+    <!-- FOOTER -->
+    <tr>
+      <td align="center" valign="top" width="100%" bgcolor="#E5E5E5" class="no_border social_background" style="border-top:1px solid #e1e1e1;">
+      <table cellpadding="0" cellspacing="0" border="0" width="100%" >
+      <tr>
+      <td style="font-size:1px; line-height:1px">&nbsp;</td>
+      <td width="500" align="center">
+
+            <!--REG CONTENT HERE  -->
+            <table  cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:500px;" class="footer_contact" >
+              <tr>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+              <td style="padding:24px; text-align:center; font-family:Arial, Helvetica, sans-serif, 'Roboto'; color:#959595; font-size:12px; line-height:20px; font-weight:300;" class="footer_pad">
+            
+              <!-- CONTACT DETAILS -->
+
+              
+          %%[IF Trim(Country) == "AU" THEN]%%
+
+          Registered Company Name: JUSTGIVING AUSTRALIA PTY LIMITED<br/>
+          ABN: 34 161 644 328, Address: C/- BDO, Level 11, 1 Margaret Street, SYDNEY NSW 2000, Australia
+
+          %%[ELSE]%%
+
+          Giving.com Limited trading as JustGiving.com Registered in England No. 3871904<br /> Registered office: The Blue Fin Building, 110 Southwark Street, 2nd Floor, London, SE1 0TA<br /> <br /> 
+
+          %%[ENDIF]%%
+
+          You've opted to receive emails from JustGiving.<br /> If you'd rather not, you can <a href="http://pages.justgiving.com/preferences" target="_blank" style="color: #666666; text-decoration: none;" title="unsubscribe here">unsubscribe here</a><br /> <br /> <a href="%%view_email_url%%" style="color: #666666; text-decoration: none;">View this email Online</a>
+           
+              </td> 
+              </tr>
+              <tr>
+              <td height="30"></td>
+              </tr>
+         </table> 
+            <!--CONTENT END  -->
+
+      </td>
+      <td style="font-size:1px; line-height:1px">&nbsp;</td>
+      </tr>
+      </table>  
+      </td>
+    </tr>
+
+
+</table>
+</center>
+<!-- GMAIL FIX -->
+<div class="gmailfix" style="white-space:nowrap; font:15px courier; line-height:0;">
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+</div>
+</body>
+<custom name="opencounter" type="tracking">
+<style data-ignore-inlining>@media print{ #_t { background-image: url('https://md6au832.emltrk.com/md6au832?p&d=%%emailaddr%%');}} div.OutlookMessageHeader {background-image:url('https://md6au832.emltrk.com/md6au832?f&d=%%emailaddr%%')} table.moz-email-headers-table {background-image:url('https://md6au832.emltrk.com/md6au832?f&d=%%emailaddr%%')} blockquote #_t {background-image:url('https://md6au832.emltrk.com/md6au832?f&d=%%emailaddr%%')} #MailContainerBody #_t {background-image:url('https://md6au832.emltrk.com/md6au832?f&d=%%emailaddr%%')}</style><div id="_t"></div>
+<img src="https://md6au832.emltrk.com/md6au832?d=%%emailaddr%%" width="1" height="1" border="0" />
+</html>   
