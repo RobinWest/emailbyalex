@@ -1,0 +1,767 @@
+@charset "UTF-8";
+
+
+body{
+	/* Replace this with a smaller image */
+	background-color: #ffeebc;
+	}
+
+	/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+	.container{
+		padding-top:70px;
+	}
+
+	.imagewrapper a{
+		display: block;
+	}
+
+	.imagewrapper img{
+		width: 100%;
+	}
+
+	p{
+		font-family:Arial, sans-serif;
+		text-align: left;
+		margin-bottom:20px;
+		margin-top: 15px
+	}
+
+
+	/*.intro p{
+		font-family: 'Duru Sans', sans-serif;
+	}*/
+	
+	.description{
+		background: rgba(40, 40, 39, 0.5);
+	}
+
+
+	.nav{
+		width: 100%;
+		height: 30px;
+		padding: 0;
+		margin-top:40px;
+	}
+
+	.nav li{
+		color: #ffffff;
+		margin: 0;
+		float: left;
+		list-style: none;
+		width: 25%;
+		text-align: center;
+	}
+
+	.morebutton{
+		background: url('../img/morework.png') no-repeat center 10px;
+		background-color: #47292b;
+		width: 100%;
+		height: 45px;
+		margin: 25px auto 25px;
+		padding-top: 10px;
+		cursor:pointer;
+	}
+
+	.contactbutton{
+		background: url('') no-repeat center 12px;
+		background-color: #8dc8d3;
+		width: 100%;
+		height: 45px;
+		margin: 30px auto 50px;
+		padding-top: 10px;
+		cursor:pointer;
+	}
+
+	
+
+	.dividerline{
+		background-color: #707070;
+		height: 1px;
+		width: 100%;
+		margin-bottom: 30px;	
+	}
+
+	.bullet{
+		background:url('../img/bullet.png') no-repeat;
+		height: 14px;
+		margin-top: -38px;
+		margin-bottom: 40px;
+	}
+
+	.cv{
+		background:url('../img/cv.png') no-repeat;
+		height: 30px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		width: 200px;
+		float: right; 
+	}
+
+	.no-touch .imagewrapper{
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.no-touch .imagewrapper .description,
+	.no-touch .imagewrapper .descriptionlrg,
+	.no-touch .imagewrapper .descriptionlrgleft{
+		position: absolute;
+		bottom: -50%;
+		left: 0;
+		right: 0;
+	}
+
+	.no-touch .imagewrapper:hover .description,
+	.no-touch .imagewrapper:hover .descriptionlrg,
+	.no-touch .imagewrapper:hover .descriptionlrgleft{
+		bottom: 0;
+		padding: 20px 0;
+		
+	}
+
+	
+	.aboutme{
+		height: 20px;
+		margin-bottom: 15px; 
+
+	}
+
+	
+
+
+
+/*Mobile*/
+@media (max-width:650px){
+	body{
+		/*background-image: url('../img/mobpattern.jpg');
+		background-repeat:repeat-x;*/
+		background-color: #ffeebc;
+		font-family: 'Duru Sans', sans-serif;
+		
+		}
+
+	.hide{
+		display:none;
+	}
+
+	.caption{
+		width: 100%;
+		padding-bottom:10px;
+		padding-top: 10px;
+	}
+
+	.caption p{
+		margin: 0 auto;
+		text-align: center;
+		font-size: 16px;
+
+	}
+
+
+	.container{
+	padding-top:10px;
+	}
+
+
+	p{
+		text-align: left;
+		margin-bottom:25px;
+		margin-top: 25px;
+		line-height: 1.4em;
+		font-size:16px;
+	}
+
+	.dividerline{
+		background-color: #707070;
+		height: 1px;
+		width: 100%;
+		margin-bottom: 20px;	
+	}
+
+	.cv{
+		background:url('../img/cv.png') no-repeat;
+		height: 30px;
+	}
+
+	.no-touch .imagewrapper{
+		position: relative;
+		overflow: hidden;
+		margin-bottom: 0px;
+	}
+	
+	.mobilehero{
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.nametag{
+		width: 100%;
+		
+	}
+
+	.nametag img{
+
+		max-width: 100%;
+	}
+	.content{
+		max-width: 400px;
+		margin: 0 auto;
+		height: auto;
+		padding-top:0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.hidetab{
+		display: none!important;
+	}
+
+}
+/* Tablet */
+@media (min-width:651px) and (max-width:979px){
+
+	body{
+	background-color: #ffeebc;
+	font-family: 'Duru Sans', sans-serif;
+	}
+
+	.container{
+		width:100%;
+		margin:0 auto;
+		height: auto;
+		padding-top: 30px;
+
+	}
+	.content{
+		max-width:780px;
+		margin:0 auto;
+		padding-top: 0px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.tabletboxhero{
+		width: 100%;
+		padding-bottom: 30px; 
+	}
+
+	.tabletboxhero img{
+		max-width: 100%;
+	}
+
+	.intro{
+		width: 100%;
+		margin:30px 0;
+	}
+
+	.intro p{
+	font-size: 1em;
+	color: #333333;
+	margin: 20px 0;
+	}
+
+	.largebox{
+		margin-left:13px;	
+	}
+
+	.largeboxleft{
+		margin-right:13px;	
+	}
+
+	.smallbox{
+		
+	}
+
+	.description{
+		background: rgba(51, 51, 51, 0.5);
+		height: 30px;
+		padding-top:5px;
+	}
+
+	.description p{
+		font-size: 16px;
+		color: #ffffff;
+		text-align: center;
+		margin: 0px;
+	}
+
+	.descriptionlrg{
+		background: rgba(40, 40, 39, 0.5);
+		margin-left:13px;
+		height: 35px;
+	}
+
+	.descriptionlrgleft{
+		background: rgba(40, 40, 39, 0.5);
+		margin-right:13px;
+		height: 35px;
+	}
+
+	.descriptionlrg p{
+		color: #ffffff;
+		text-align: center;
+		line-height: 1.2em;
+		margin: 0;
+		padding-top: 7px;
+
+	}
+
+	.descriptionlrgleft p{
+		color: #ffffff;
+		text-align: center;
+		line-height: 1.2em;
+		margin: 0;
+		padding-top: 7px;
+	}
+
+	.hideDesktop{
+		display: none!important;
+	}
+
+
+}
+
+/* Desktop */
+@media (min-width:980px){
+
+	body{
+	background-image: url('../img/toppattern.jpg');
+	background-repeat:repeat-x;
+	background-color: #ffeebc;
+	font-family: 'Duru Sans', sans-serif;
+	}
+
+	.container{
+		width:780px;
+		margin:0 auto;
+		height: auto;
+		padding-top: 50px;
+	}
+
+	.content{
+		max-width: 780px;
+		margin:0 auto;
+		padding-top: 0px;
+	}
+
+	.intro{
+		width: 100%;
+		height: auto;
+
+	}
+
+	.intro p{
+	font-size: 16px;
+	color: #333333;
+	text-align: left;
+	line-height: 1.3em;
+	margin-bottom: 5px;
+	 
+	}
+
+	.largebox{
+		margin-left:13px;	
+	}
+
+	.smallboxright{
+		height: 200px;	
+	}
+
+	.largeboxleft{
+		margin-right:13px;	
+	}
+
+
+	.descriptionlrgleft{
+		background: rgba(40, 40, 39, 0.5);
+		margin-right:13px;
+		height: 50px;
+	}
+
+	.descriptionlrgleft p{
+		font-size: 16px;
+		color: #ffffff;
+		text-align: center;
+		line-height: 1.2em;
+		margin: 0;
+		padding-top: 7px;
+	}
+
+	.smallbox{
+		background-color:#BADA55;
+			
+	}
+
+
+	.description p{
+		font-size: 16px;
+		color: #ffffff;
+		text-align: center;
+		margin: 0px;
+	}
+
+	.descriptionlrg{
+		background: rgba(40, 40, 39, 0.3);
+		margin-left:13px;
+		height: 50px;
+	}
+
+	.descriptionlrg p{
+		font-size: 16px;
+		color: #ffffff;
+		text-align: center;
+		line-height: 1.2em;
+		margin: 0;
+		padding-top: 7px;
+	}
+
+
+	.hideDesktop{
+		display: none!important;
+	}
+
+	.hero {
+		margin-bottom: 70px;
+	}
+
+	.straphead{
+		margin-top: 10px;
+	}
+
+	.straphead p{
+		font-family: 'Questrial', sans-serif;
+		font-size: 30px;
+		color: #000000;
+	}
+	
+	.hidetab{
+		display: none!important;
+	}
+
+	
+}
+
+
+@media (max-width:839px){
+		
+		.hidehybrid{
+			display: none;
+		}
+}
+
+@media (min-width:840px){
+
+	body{
+	background-image: url('../img/toppattern.jpg');
+	background-repeat:repeat-x;
+	background-color: #ffeebc;
+	font-family: 'Duru Sans', sans-serif;
+	}
+
+
+
+	.hideboth{
+		display: none;
+	}
+
+	.herocontent{
+		max-width: 780px;
+		margin:0 auto;
+		padding-top: 0px;
+		padding-bottom:50px;
+	}
+
+	.herocontent img{
+		margin:0 auto;
+	}
+
+	.firstline{
+		max-width: 780px;
+		height: 208px;
+	}
+
+	.nametag{
+		width: 387px;
+		float: left;
+		height: 208px;
+		background-color: #333333;
+	}
+
+	.nametag img{
+		margin-top: 20px;
+	}
+
+	.two{
+		width: 177px;
+		height: 208px;
+		float: left;
+		background-color: #F5DDA1;
+	}
+
+	.two img{
+		margin-top:7px;
+	}
+
+	.areaone{
+		width: 216px;
+		max-height: 208px;
+		float: left;
+	}
+
+	.three{
+		width: 216px;
+		height: 70px;
+		background-color: #F87024;
+		cursor: pointer;
+	}
+
+	.three:hover{
+		background-color: #f5dda1;
+	}
+
+	.four{
+		width: 216px;
+		height: 138px;
+		background-color: #FFC324;
+		
+
+	}
+
+	.secondline{
+		max-width: 780px;
+		height: 185px;
+	}
+
+	.areatwo{
+		max-width: 183px;
+		max-height:185px;
+		float: left;
+	}
+
+	.five{
+		width: 183px;
+		height: 93px;
+		background-color: #8EC8D4;
+	}
+
+	.six{
+		width: 183px;
+		height: 92px;
+		background-color: #F5DDA1;
+		
+	}
+
+	.areathree{
+		max-width: 401px;
+		height: 185px;
+		float: left;
+	}
+
+	.areathreelineone{
+		width: 401px;
+		height: 62px;
+		float: left;
+	}
+
+	.seven{
+		width: 334px;
+		height: 62px;
+		float: left;
+		background-color: #F57421;
+
+	}
+
+	.seven img{
+		margin-top: 10px;
+	}
+
+	.eight{
+		width: 67px;
+		height: 62px;
+		background-color: #47292B;
+		float: left;
+	}
+
+	.areathreelinetwo{
+		width: 401px;
+		height: 123px;
+		float: left;
+	}
+
+	.nine{
+		width: 179px;
+		height: 123px;
+		background-color: #47292B;
+		float: left;
+	}
+
+	.nine img{
+		margin-top: 30px;
+		margin-right: 40px;
+	}
+
+	.ten{
+		width: 222px;
+		height: 123px;
+		background-color: #FFC324;
+		float: left;
+	}
+
+	.ten img{
+		margin-top: 45px;
+	}
+
+	
+
+	.areafour{
+		max-width: 134px;
+		height: 185px;
+		float: left;
+	}
+
+	.twelve{
+		width: 134px;
+		height: 92px;
+		background-color: #F47320;
+	}
+
+	.eleven img{
+		margin-top: 5px;
+	}
+
+	.thirteen{
+		width: 134px;
+		height: 93px;
+		background-color: #8EC8D4;
+		
+	}
+
+	.areafive{
+		max-width: 62px;
+		height: 185px;
+		float: left;
+	}
+
+	.fourteen{
+		width: 62px;
+		height: 116px;
+		background-color: #F5DDA1;
+	}
+
+	.fifteen{
+		width: 62px;
+		height: 69px;
+		background-color: #47292B;
+	}
+
+
+	.lastline{
+		max-width: 780px;
+		height: 192px;
+	}
+
+	.sixteen{
+		width: 183px;
+		height: 192px;
+		background-color: #FFEDBB;
+		float: left; 
+	}
+
+	.sixteen img{
+		margin-top: 15px;
+	}
+
+	.areasix{
+		max-width:459px;
+		height: 192px;
+		float: left; 
+	}
+
+	.areasixlineone{
+		width: 459px;
+		height: 71px;
+		float: left;
+	}
+
+	.seventeen{
+		width: 135px;
+		height: 71px;
+		background-color: #F4731F;
+		float: left;
+	}
+
+	.seventeen img{
+		margin-top: 15px;
+	}
+
+	.eighteen{
+		width: 324px;
+		height: 71px;
+		background-color: #FFEDBB;
+		float: left;
+	}
+
+	.eighteen img{
+		margin-top: 19px;
+	}
+
+	.areasixlinetwo{
+		width: 459px;
+		height: 121px;
+		float: left;
+	}
+
+	.ninteen{
+		width: 267px;
+		height: 121px;
+		background-color: #FFC324;
+		float: left;
+	}
+
+	.ninteen img{
+		margin-top:16px;
+	}
+
+	.twenty{
+		width: 192px;
+		height: 121px;
+		background-color: #8EC8D4;
+		float: left;
+	}
+
+	.twenty img{
+		margin-top: 20px;
+	}
+
+	.twentyone{
+		width: 138px;
+		height: 192px;
+		background-color: #F5DDA1;
+		float: left;
+	}
+
+	}

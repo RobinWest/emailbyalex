@@ -1,0 +1,71 @@
+.icon-magnet{
+	font-size:120px;
+	color: #47292B;
+	line-height:0em;
+	text-align: center;
+}
+
+.magnetoffset{
+	position: relative;
+	top: 70px;
+}
+
+
+.icon-aok{
+	color: #47292b;
+	font-size: 215px;
+	left: -70px;
+	bottom: 4px;	
+	position: relative;
+}
+
+.icon-diamond{
+	color: #f4731f;
+	font-size: 120px;
+	bottom: 15px;	
+	position: relative;
+}
+
+.icon-snespad{
+	color: #f4731f;
+	font-size: 160px;
+	bottom: 25px;
+	right: 18px;	
+	position: relative;
+}
+
+
+.icon-alexinvert{
+	color: #f5dda1;
+	font-size: 60px;	
+	position: relative;
+	font-size: 50px;
+	top:9px;
+	left: 2px;
+}
+
+.three:hover .icon-alexinvert{
+	display: none;
+}
+
+.three:hover .icon-twitter{
+	color: #f87024;
+	font-size: 60px;	
+	position: relative;
+	font-size: 50px;
+	top:9px;
+	left: 2px;
+	display: block;
+}
+
+.icon-twitter{
+	display: none;
+}
+
+.icon-contact{
+	color: #ffffff;
+	font-size: 28px;
+	line-height: 35px;	
+	text-align: center;
+	
+}		
